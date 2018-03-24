@@ -27,16 +27,16 @@
 body {
   font-family: Proxima;
   margin: 0 auto;
-  width: 73.4%;
+  width: 100%;
 }
 
 /* navbar */
 
 .navbar-main {
-  background-color: #231F20;
+  background-color: black;
   display: flex;
   color: white;
-  height: 95px;
+  height: 83px;
   justify-content: space-between;
 }
 
@@ -50,18 +50,16 @@ body {
 .navbar-links > a {
   text-decoration: none;
   color: white;
-  margin-left: 14px;
-  margin-right: 14px;
-  margin-bottom: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
   font-weight: bold;
-  font-size: 20px;
 }
 
 .navbar-links > img {
-  width: 201px;
-  height: 54px;
-  padding: 20px;
-  margin-right: 9px;
+  width: 165px;
+  height: 44px;
+  margin-left: 15px;
+  margin-right: 23px;
 }
 
 .navbar-phone {
@@ -71,24 +69,24 @@ body {
 }
 
 .navbar-phone-number {
-  font-size: 33px;
+  font-size: 27px;
   margin-right: 13px;
 }
 
 .navbar-screening {
   background-color: #C09072;
-  width: 195px;
-  height: 65px;
+  width: 157px;
+  height: 55px;
   border: 2px solid white;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   position: relative;
 }
 
 .navbar-screening > i {
-  font-size: 26px;
+  font-size: 21px;
   position: absolute;
-  top: 21px;
-  left: 7px;
+  top: 20px;
+  left: 5px;
 }
 
 .navbar-chat {
@@ -101,26 +99,54 @@ body {
 
 .navbar-light {
   font-weight: 200;
-  font-size: 15px;
+  font-size: 12px;
   position: relative;
   margin-top: 1px;
 }
 
 .navbar-light:after {
   content: '';
-  width: 122px;
+  width: 97px;
   height: 1px;
   background: white;
   position: absolute;
   bottom: -3px;
-  left: 15px;
+  left: 12px;
 }
 
 .navbar-bold {
   font-weight: bold;
   text-align: center;
   width: 75%;
-  margin-top: 8px;
+  margin-top: 7px;
   margin-left: 9px;
-  font-size: 17px;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+/* banner */
+.banner-main {
+  width: 100%;
+  height: 264px;
+  background-image: url("assets/banner_bg.jpeg");
+  background-position: 0% 28%;
+  position: relative;
+}
+
+.banner-info {
+  position: absolute;
+  background: rgba(35,31,32,0.6);
+  height: 99px;
+  top: 119px;
+}
+
+.banner-info > div {
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 75%;
+  line-height: 1.5;
 }
