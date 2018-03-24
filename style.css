@@ -23,7 +23,6 @@
 }
 
 /* body */
-
 body {
   font-family: Proxima;
   margin: 0 auto;
@@ -31,7 +30,6 @@ body {
 }
 
 /* navbar */
-
 .navbar-main {
   background-color: black;
   display: flex;
@@ -150,4 +148,23 @@ body {
   margin-top: 25px;
   width: 75%;
   line-height: 1.5;
+}
+
+/* steps indicator */
+.steps-main {
+  margin: 0 auto;
+  width: 400px;
+}
+
+li {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: dodgerblue;
+  margin: 0 1em;
+  display: inline-block;
+  color: white;
+  position: relative;
 }
