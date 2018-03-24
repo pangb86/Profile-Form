@@ -130,6 +130,7 @@ body {
   height: 264px;
   background-image: url("assets/banner_bg.jpeg");
   background-position: 0% 28%;
+  background-size: cover;
   position: relative;
 }
 
