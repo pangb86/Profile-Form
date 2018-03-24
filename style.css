@@ -1,0 +1,126 @@
+/* Add local font files */
+@font-face {
+    font-family: Proxima;
+    src: url("assets/proxima_nova/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url("assets/proxima_nova/ProximaNova-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url("assets/proxima_nova/ProximaNova-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url("assets/proxima_nova/ProximaNova-Light.otf") format("opentype");
+    font-weight: 200;
+}
+
+/* body */
+
+body {
+  font-family: Proxima;
+  margin: 0 auto;
+  width: 73.4%;
+}
+
+/* navbar */
+
+.navbar-main {
+  background-color: #231F20;
+  display: flex;
+  color: white;
+  height: 95px;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 3px;
+}
+
+.navbar-links > a {
+  text-decoration: none;
+  color: white;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-links > img {
+  width: 201px;
+  height: 54px;
+  padding: 20px;
+  margin-right: 9px;
+}
+
+.navbar-phone {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.navbar-phone-number {
+  font-size: 33px;
+  margin-right: 13px;
+}
+
+.navbar-screening {
+  background-color: #C09072;
+  width: 195px;
+  height: 65px;
+  border: 2px solid white;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.navbar-screening > i {
+  font-size: 26px;
+  position: absolute;
+  top: 21px;
+  left: 7px;
+}
+
+.navbar-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.navbar-light {
+  font-weight: 200;
+  font-size: 15px;
+  position: relative;
+  margin-top: 1px;
+}
+
+.navbar-light:after {
+  content: '';
+  width: 122px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: -3px;
+  left: 15px;
+}
+
+.navbar-bold {
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+  margin-top: 8px;
+  margin-left: 9px;
+  font-size: 17px;
+}
