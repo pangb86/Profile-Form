@@ -137,6 +137,7 @@ body {
   background: rgba(35,31,32,0.6);
   height: 99px;
   top: 119px;
+  width: 100%;
 }
 
 .banner-info > div {
@@ -153,18 +154,66 @@ body {
 /* steps indicator */
 .steps-main {
   margin: 0 auto;
-  width: 400px;
+  width: 406px;
+  margin-top: 17px;
 }
 
-li {
-  width: 2em;
-  height: 2em;
+.steps-numbers {
+  width: 337px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.steps-circle-1, .steps-circle-2, .steps-circle-3 {
+  width: 35px;
+  height: 35px;
   text-align: center;
-  line-height: 2em;
-  border-radius: 1em;
-  background: dodgerblue;
-  margin: 0 1em;
-  display: inline-block;
-  color: white;
+  line-height: 37px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0;
+  color: black;
   position: relative;
+  font-size: 24px;
+  opacity: 0.2;
+}
+
+.steps-line {
+  width: 116px;
+  height: 1px;
+  background: black;
+  opacity: 0.2;
+}
+
+.steps-active {
+  opacity: 1.0;
+  border: 2px solid black;
+}
+
+.steps-info-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.steps-info-1, .steps-info-2, .steps-info-3 {
+  color: black;
+  opacity: 0.2;
+  font-size: 13px;
+}
+
+.steps-info-2 {
+  margin-right: 22px;
+}
+
+.steps-info-3 {
+  margin-right: 10px;
+}
+
+.steps-info-active {
+  opacity: 1.0;
 }

@@ -5,18 +5,21 @@ class StepsIndicator extends React.Component {
     super(props);
   }
 
-  // <div className="steps-info">ABOUT YOURSELF</div>
-  // <div className="steps-info">IDEAL PARTNER</div>
-  // <div className="steps-info">ADD PHOTOS</div>
-
   render() {
     return (
       <div className="steps-main">
-        <ul>
-          <li className="steps-one">1</li>
-          <li className="steps-two">2</li>
-          <li className="steps-three">3</li>
-        </ul>
+        <div className="steps-numbers">
+          <div className="steps-circle-1">1</div>
+          <div className="steps-line"></div>
+          <div className="steps-circle-2">2</div>
+          <div className="steps-line"></div>
+          <div className="steps-circle-3">3</div>
+        </div>
+        <div className="steps-info-box">
+          <div className="steps-info-1">ABOUT YOURSELF</div>
+          <div className="steps-info-2">IDEAL PARTNER</div>
+          <div className="steps-info-3">ADD PHOTOS</div>
+        </div>
       </div>
     );
   }
