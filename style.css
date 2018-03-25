@@ -167,7 +167,7 @@ body {
   margin: 0 auto;
 }
 
-.steps-circle-1, .steps-circle-2, .steps-circle-3 {
+.steps-circle {
   width: 35px;
   height: 35px;
   text-align: center;
@@ -202,17 +202,17 @@ body {
   margin-top: 8px;
 }
 
-.steps-info-1, .steps-info-2, .steps-info-3 {
+.steps-info {
   color: black;
   opacity: 0.2;
   font-size: 13px;
 }
 
-.steps-info-2 {
+#steps-2 {
   margin-right: 15px;
 }
 
-.steps-info-3 {
+#steps-3 {
   margin-right: 10px;
 }
 

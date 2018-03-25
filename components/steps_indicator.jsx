@@ -3,22 +3,44 @@ import React from 'react';
 class StepsIndicator extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      circleOff: "steps-circle",
+      circleOn: "steps-circle steps-active",
+      infoOff:"steps-info",
+      infoOn:"steps-info steps-info-active",
+    };
+  }
+
+  componentDidMount() {
+    console.log(this.props);
   }
 
   render() {
     return (
       <div className="steps-main">
         <div className="steps-numbers">
-          <div className="steps-circle-1">1</div>
+          <div className={this.props.step === "1" ? this.state.circleOn : this.state.circleOff}>
+            1
+          </div>
           <div className="steps-line"></div>
-          <div className="steps-circle-2">2</div>
+          <div className={this.props.step === "2" ? this.state.circleOn : this.state.circleOff}>
+            2
+          </div>
           <div className="steps-line"></div>
-          <div className="steps-circle-3">3</div>
+          <div className={this.props.step === "3" ? this.state.circleOn : this.state.circleOff}>
+            3
+          </div>
         </div>
         <div className="steps-info-box">
-          <div className="steps-info-1">ABOUT YOURSELF</div>
-          <div className="steps-info-2">IDEAL PARTNER</div>
-          <div className="steps-info-3">ADD PHOTOS</div>
+          <div className={this.props.step === "1" ? this.state.infoOn : this.state.infoOff}>
+            ABOUT YOURSELF
+          </div>
+          <div className={this.props.step === "2" ? this.state.infoOn : this.state.infoOff}>
+            IDEAL PARTNER
+          </div>
+          <div className={this.props.step === "3" ? this.state.infoOn : this.state.infoOff}>
+            ADD PHOTOS
+          </div>
         </div>
       </div>
     );

@@ -8,7 +8,7 @@ const App = () => (
   <div className="main-app-container">
     <Navbar/>
     <Banner/>
-    <StepsIndicator/>
+    <StepsIndicator step="1"/>
   </div>
 );
 
