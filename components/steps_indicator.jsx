@@ -32,10 +32,16 @@ class StepsIndicator extends React.Component {
           <div className={this.props.step === "1" ? this.state.infoOn : this.state.infoOff}>
             ABOUT YOURSELF
           </div>
-          <div className={this.props.step === "2" ? this.state.infoOn : this.state.infoOff}>
+          <div
+            className={this.props.step === "2" ? this.state.infoOn : this.state.infoOff}
+            id="steps-2"
+          >
             IDEAL PARTNER
           </div>
-          <div className={this.props.step === "3" ? this.state.infoOn : this.state.infoOff}>
+          <div
+            className={this.props.step === "3" ? this.state.infoOn : this.state.infoOff}
+            id="steps-3"
+          >
             ADD PHOTOS
           </div>
         </div>
