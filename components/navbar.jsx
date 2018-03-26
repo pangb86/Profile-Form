@@ -1,6 +1,13 @@
 import React from 'react';
-
+// props:
+// phoneNumber: string
+// message1: string
+// message2: string
 class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="navbar-main">
@@ -12,12 +19,12 @@ class Navbar extends React.Component {
           <a href="#">Sign In</a>
         </div>
         <div className="navbar-phone">
-          <span className="navbar-phone-number">1 (888) 494-7280</span>
+          <span className="navbar-phone-number">{this.props.phoneNumber}</span>
           <div className="navbar-screening">
             <i class="fa fa-phone"></i>
             <div className="navbar-chat">
-              <span className="navbar-light">Chat with a love expert</span>
-              <span className="navbar-bold">CLICK HERE FOR FREE SCREENING</span>
+              <span className="navbar-light">{this.props.message1}</span>
+              <span className="navbar-bold">{this.props.message2}</span>
             </div>
           </div>
         </div>

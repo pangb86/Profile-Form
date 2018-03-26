@@ -1,5 +1,6 @@
 import React from 'react';
-
+// props:
+// step: string indicating which step to highlight
 class StepsIndicator extends React.Component {
   constructor(props) {
     super(props);
@@ -9,10 +10,6 @@ class StepsIndicator extends React.Component {
       infoOff:"steps-info",
       infoOn:"steps-info steps-info-active",
     };
-  }
-
-  componentDidMount() {
-    console.log(this.props);
   }
 
   render() {
