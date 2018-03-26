@@ -99,7 +99,6 @@ body {
   font-weight: 200;
   font-size: 12px;
   position: relative;
-  margin-top: 1px;
 }
 
 .navbar-light:after {
@@ -251,13 +250,6 @@ body {
   justify-content: space-between;
 }
 
-.about-input-1, .about-input-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .about-group {
   display: flex;
   flex-direction: column;
@@ -298,4 +290,35 @@ body {
   font-weight: 200;
   color: rgba(0, 0, 0, 0.6);
   margin-top: 5px;
+}
+
+.about-birthday {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-month-day {
+  font-family: Proxima;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 5px;
+  width: 50px;
+  height: 35px;
+  background-color: white;
+  box-sizing: border-box;
+  margin-right: 12px;
+  text-align: center;
+}
+
+.about-year {
+  font-family: Proxima;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 5px;
+  width: 66px;
+  height: 35px;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center;
 }
