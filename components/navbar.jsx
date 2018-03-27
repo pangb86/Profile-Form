@@ -20,6 +20,7 @@ class Navbar extends React.Component {
         </div>
         <div className="navbar-phone">
           <span className="navbar-phone-number">{this.props.phoneNumber}</span>
+          <a href='#'>
           <div className="navbar-screening">
             <i class="fa fa-phone"></i>
             <div className="navbar-chat">
@@ -27,6 +28,7 @@ class Navbar extends React.Component {
               <span className="navbar-bold">{this.props.message2}</span>
             </div>
           </div>
+          </a>
         </div>
       </div>
     );
