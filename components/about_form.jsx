@@ -63,7 +63,6 @@ class AboutForm extends React.Component {
           {this.props.message}
         </div>
         <div className="about-input-main">
-
           <div className="about-main">
             <div className="about-group">
               <span className="about-bold">YOUR GENDER</span>
@@ -127,7 +126,6 @@ class AboutForm extends React.Component {
               </span>
             </div>
           </div>
-
           <div className="about-main">
             <div className="about-group">
               <span className="about-bold">YOU ARE SEEKING</span>
@@ -215,7 +213,6 @@ class AboutForm extends React.Component {
               </span>
             </div>
           </div>
-
         </div>
         <button className="about-save-button">
           SAVE AND CONTINUE

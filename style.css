@@ -384,6 +384,27 @@ body {
   margin-top: 60px;
   margin-bottom: 70px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   color: white;
+}
+
+/* photos form */
+.photos-button {
+  border: none;
+  background-color: #F27172;
+  height: 30px;
+  width: 225px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 17px;
+  margin-bottom: 70px;
+}
+
+.photos-input {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
