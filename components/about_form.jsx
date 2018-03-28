@@ -1,5 +1,6 @@
 import React from 'react';
 import StepsIndicator from './steps_indicator';
+import { withRouter } from 'react-router-dom';
 // props:
 // message: string
 class AboutForm extends React.Component {
@@ -52,7 +53,7 @@ class AboutForm extends React.Component {
     for (let i = 48; i <= 84; i++) {
       heights.push(i);
     }
-
+    console.log(this.props);
     return (
       <div className="about-main">
         <StepsIndicator step="1"/>
@@ -222,4 +223,4 @@ class AboutForm extends React.Component {
   }
 }
 
-export default AboutForm;
+export default withRouter(AboutForm);

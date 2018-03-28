@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import StepsIndicator from './steps_indicator';
 // props:
 // message1: string
@@ -51,4 +52,4 @@ class PhotosForm extends React.Component {
   }
 }
 
-export default PhotosForm;
+export default withRouter(PhotosForm);
