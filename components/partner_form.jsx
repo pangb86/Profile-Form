@@ -4,6 +4,12 @@ import StepsIndicator from './steps_indicator';
 class PartnerForm extends React.Component {
   constructor() {
     super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    this.props.history.push("/photos");
   }
 
   render() {
@@ -13,7 +19,8 @@ class PartnerForm extends React.Component {
         <div className="about-tell-us">
           PLACEHOLDER
         </div>
-        <button className="about-save-button">
+        <button className="about-save-button"
+          onClick={this.handleClick}>
           SAVE AND CONTINUE
         </button>
       </div>

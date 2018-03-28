@@ -34,6 +34,7 @@ class AboutForm extends React.Component {
     };
     this.toggleHeightButton = this.toggleHeightButton.bind(this);
     this.toggleIncomeButton = this.toggleIncomeButton.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   toggleHeightButton() {
@@ -48,12 +49,17 @@ class AboutForm extends React.Component {
     return e => this.setState({[field]: e.currentTarget.value});
   }
 
+  handleClick(e) {
+    e.preventDefault();
+    this.props.history.push("/ideal");
+  }
+
   render() {
     let heights = [];
     for (let i = 48; i <= 84; i++) {
       heights.push(i);
     }
-    console.log(this.props);
+
     return (
       <div className="about-main">
         <StepsIndicator step="1"/>
@@ -215,7 +221,8 @@ class AboutForm extends React.Component {
             </div>
           </div>
         </div>
-        <button className="about-save-button">
+        <button className="about-save-button"
+          onClick={this.handleClick}>
           SAVE AND CONTINUE
         </button>
       </div>
